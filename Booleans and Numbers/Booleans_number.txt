@@ -1,0 +1,57 @@
+Number type and arithmetic operators
+ - Number type covers both integers and floating point numbers, as well as special cases like infinity and NaN.
+ - JavaScript provides tools to perform basic arithmetic operations on numbers, such as addition, subtraction, multiplication, and division. JavaScript also includes operators for more complex arithmetic operations, such as remainder and exponentiation.
+ - Type coercion is when a value from one data type is converted into another.
+ - When such conversion fails, JavaScript returns NaN, which stands for "Not a Number". NaN is a special value of the Number type that represents an invalid or unrepresentable number.
+
+Operator Behavior
+ - In both multiplication and division, those operations will always take place before addition and subtraction unless you use parentheses to change the order. 
+ - For most operators like addition and multiplication, associativity is left to right. So, JavaScript processes these from the leftmost side of the expression to the right.
+ - Some operators, like assignment (=), are right-to-left associative. This means the right side of the expression gets evaluated first.
+ - The exponent operator is also right-to-left associative.
+ - The increment and decrement operators are represented by ++ and --, respectively. They both allow you to adjust the value of a variable by 1.
+ - Prefix increases the value of the variable first, then returns a new value.
+ - Postfix returns the current value of the variable first, then increase it.
+
+Comparison and Boolean Operator
+ - Booleans are a data type with only true and false values. They're useful because they allow you to do something based on some conditions.
+ - To compare two values, you can use either the equality or strict equality operator. The result of the comparison will be a boolean of either true or false.
+ - Comparison operator typically used in If statements, loops, and other situations requiring decisions based on condition.
+ - === and !== are the two operators avoid type coercion.
+
+Unary and Bitwise operators
+ - Unary operators act on a single operand to perform operations like type conversion, value manipulation, or checking certain conditions. 
+ - typeof operator returns the type of its operand as a string.
+ - The bitwise NOT operator flips every nit, turning all 1's to 0's and all 0's to 1's.
+ - In computing, a bit is the most basic unit of information. It can have only two values: 0 or 1.
+ - Binary is a number system that uses only these two digits to represent all numbers.
+ - JavaScript provides several bitwise operators, including AND (&), OR (|), XOR (^), NOT (~), left shift (<<), and right shift (>>).
+
+Conditional Logic and Math Methods
+ - An if statement takes a condition and runs a block of code if that condition is truthy. 
+ - The ternary operator is a compact way to write simple if/else statements. It has three parts: a condition, a result if the condition is true, and a result if it is false.
+ - Use a ternary while dealing with a single condition or single expressions, or when you want a compact syntax for simple logic. Use if/else statements when you're dealing with complex conditions and multiple statements, as things become unreadable if you nest ternaries.
+ - The logical AND operator is represented by a double ampersand (&&). It checks if both operands are true and returns a result. If both operands are truthy, it returns the second value, that is, the one on the right.
+ - The logical OR operator checks if at least one of the operands is truthy. If the first operand is truthy, it returns that value.
+ - The nullish coalescing operator is more sophisticated than logical OR and logical AND. Represented by a double question mark (??), it helps in scenarios where you want to return a value only if the first one is null or undefined.
+ - The Math.random() method generates a random floating-point number between 0 (inclusive) and 1 (exclusive).
+ - If you wanted to round numbers up or down to the nearest whole integer, you could use the Math.ceil() and Math.floor() methods.
+ - Math.round() is the hybrid of Math.ceil() and Math.floor().
+ - Math.trunc() removes the decimal part of a number, returning only the integer portion, without rounding.
+ - If you need to get the square root or cube root of a number, you can use the Math.sqrt() and Math.cbrt() methods, respectively.
+ - If you need to get the absolute value of a number, you can use the Math.abs() method.
+ - Math.pow() takes two numbers and raise the first to the power of the second.
+
+Numbers and Common Number Methods
+ - NaN stands for "Not a Number". It's a special value that represents an unrepresentable or undefined numerical result. 
+ - The isNaN() function property is used to determine whether a value is NaN or not.
+ - parseFloat() method parses a string argument and returns a floating-point number. It's designed to extract a number from the beginning of a string, even if the string contains non-numeric characters later on. 
+ - parseInt(), on the other hand, parses a string argument and returns an integer. Like parseFloat(), it starts from the beginning of the string, but it stops at the first non-digit character. 
+ - The .toFixed() method is called on a number and takes one optional argument, which is the number of digits to appear after the decimal point. Returns string not a number.
+
+Comparisons and Conditionals
+ - A variable is undefined when it has been declared but hasn't been assigned a value. It's the default value of uninitialized variables and function parameters that weren't provided an argument.
+ - The null type is an assignment value that represents a deliberate non-value. It's often used to indicate that a variable intentionally has no value.
+ - A switch statement evaluates an expression and matches its value against a series of case clauses. When a match is found, the code block associated with that case is executed. 
+ 
+
